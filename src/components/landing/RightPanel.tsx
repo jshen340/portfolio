@@ -10,16 +10,24 @@ const RightPanel = () => {
         <div className="block">
           <ul>
             <li>hello</li>
-            <FillBar style={{ width: "80%" }} />
+            <li>
+              <FillBar style={{ width: "80%" }} />
+            </li>
 
             <li>next</li>
-            <FillBar style={{ width: "80%" }} />
+            <li>
+              <FillBar style={{ width: "80%" }} />
+            </li>
 
             <li>java</li>
-            <FillBar style={{ width: "80%" }} />
+            <li>
+              <FillBar style={{ width: "60%" }} />
+            </li>
 
             <li>another</li>
-            <FillBar style={{ width: "80%" }} />
+            <li>
+              <FillBar style={{ width: "80%" }} />
+            </li>
           </ul>
         </div>
       </div>

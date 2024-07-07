@@ -1,1 +1,2 @@
-export default `there is so much text here rahhhh`
+export default `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque labore non repudiandae necessitatibus, ullam dicta amet nobis ipsam sint veniam hic voluptate magni libero architecto, dolore deserunt ex distinctio. Iste!
+`
