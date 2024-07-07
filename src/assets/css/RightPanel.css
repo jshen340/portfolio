@@ -1,0 +1,30 @@
+.container {
+    margin-right: 9rem;
+    /* margin-top: 36px; */
+    /* height: 65vh; */
+    width: 40%;
+    padding: 2vw;
+    perspective: 80vw;
+}
+
+.slant-right {
+    position: absolute;
+    display: inline-block;
+    padding: 2vw;
+    width:100%;
+    height: 85%;
+    font-family: Monoton;
+    color: white;
+    font-size: 2rem;
+    text-align: end;
+    background-image: linear-gradient(rgba(209, 152, 152, 0.7) 65%, rgba(255,0,0,0));
+    transform: rotateY(-30deg);
+    font-family: 'Josefin Sans';
+
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin: 0.2rem;
+  }

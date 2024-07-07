@@ -1,0 +1,1 @@
+export default `she's the baddest cat ever`

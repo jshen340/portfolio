@@ -1,0 +1,15 @@
+.full-bar {
+    width: 90%;
+    background-color: rgb(255, 196, 244);
+    float: right;
+    border-radius: 20px;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.inner-bar {
+    background-color: rgb(186, 129, 165);
+    float: left;
+    border-radius: 20px;
+    height: 100%;
+}

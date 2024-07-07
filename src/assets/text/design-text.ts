@@ -1,0 +1,1 @@
+export default `i do design idk what else i do afji;amvan;kn`
