@@ -55,18 +55,28 @@ const CarouselSlide = () => {
     >
       <div className="project">
         <img className="photo" src={gray} alt="" />
+        <h4>UniBuzzy</h4>
+        <p>An interactive hub for all things college.</p>
       </div>
       <div className="project">
         <img className="photo" src={gray} alt="" />
+        <h4>Monthly Wrapped</h4>
+        <p>Spotify Wrapped. Every month.</p>
       </div>
       <div className="project">
         <img className="photo" src={gray} alt="" />
+        <h4></h4>
+        <p></p>
       </div>
       <div className="project">
         <img className="photo" src={gray} alt="" />
+        <h4></h4>
+        <p></p>
       </div>
       <div className="project">
         <img className="photo" src={gray} alt="" />
+        <h2></h2>
+        <p></p>
       </div>
     </Carousel>
   );
