@@ -1,0 +1,37 @@
+.photo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+.react-multi-carousel-list{
+  position: unset !important;
+  width: 80%;
+  padding: 30px 0 ;
+  margin: 0 auto;
+
+
+
+}
+
+.item {
+  display: block;
+  text-align: center;
+  padding: 16px;
+}
+
+
+.react-multiple-carousel__arrow--left {
+  left: calc(8% + 1px);
+  background-color: pink;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(8% + 1px);
+  background-color: pink;
+}
+
+/* https://github.com/YIZHUANG/react-multi-carousel/blob/061e721b3ed9e3bd83b131c92fc54bb0c9a0a534/src/assets/styles.css#L4 */

@@ -5,16 +5,15 @@ import LeftPanel from "./components/landing/LeftPanel";
 import RightPanel from "./components/landing/RightPanel";
 import devText from "./assets/text/dev-text";
 import Slideshow from "./components/Slideshow";
+import Hero from "./components/Hero";
+import CarouselSlide from "./components/CarouselSlide";
+import TabGroup from "./components/TabGroup";
 function App() {
   return (
     <div className="App">
-      {/* <Slideshow /> */}
-      <div className="slides">
-        <div className="panels">
-          <LeftPanel longtext={devText} />
-          <RightPanel />
-        </div>
-      </div>
+      <Hero />
+      <TabGroup />
+      <CarouselSlide />
     </div>
   );
 }

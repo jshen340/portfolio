@@ -1,0 +1,55 @@
+a {
+    margin:10px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    text-align: right;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;}
+
+.intro-text {
+    flex-basis: 30%;
+}
+
+.topper {
+    text-transform: lowercase;
+    text-align: left;
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.title {
+    font-family: 'Neonderthaw';
+    font-weight: 400;
+    font-size: 8vw;
+    color: #61524A;
+    padding-left: 3vw;
+    text-align: left;
+    position: relative;
+}
+
+.label {
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 0.5em;
+    display: block;
+    position: absolute;
+     font-weight: 800;
+    font-size: 1vw;
+    margin-top: -2vh;
+    margin-left: 7.6vw;
+}
+
+p {
+    margin: 20px;
+}
