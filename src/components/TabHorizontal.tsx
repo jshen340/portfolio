@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Tab from "./Tab";
 import "../assets/css/TabHorizontal.css";
 import TabVertical from "./TabVertical";
+import Summer24Delta from "../assets/text/summer24-delta";
 interface Tabs {
   label: string;
   description: string;
@@ -10,13 +11,17 @@ interface Props {
   tabs: Tabs[];
 }
 const tabData = [
-  { label: "Summer 2024", description: "OAUTILS RAHHHHH" },
-  { label: "Fall 2023", description: "TODPS RAHHH" },
+  { label: "Summer 2024", description: <Summer24Delta /> },
+  {
+    label: "Fall 2023",
+    description:
+      "TODPS RAHHH and here are just some filler words,  i need to see how it looks like on the screen with all of the words together",
+  },
   { label: "Spring 2023", description: "cute little dashboards" },
 ];
 
-const TabCarousel = ({ tabs }: Props) => {
-  const [activeTab, setActiveTab] = useState(1);
+const TabHorizontal = ({ tabs }: Props) => {
+  const [activeTab, setActiveTab] = useState(0);
 
   const handleTagClick = (index: number) => {
     setActiveTab(index);
@@ -30,6 +35,7 @@ const TabCarousel = ({ tabs }: Props) => {
             label={tab.label}
             onClick={() => handleTagClick(index)}
             isActive={index === activeTab}
+            way={"horizontal"}
           />
         ))}
       </div>
@@ -48,4 +54,4 @@ const TabCarousel = ({ tabs }: Props) => {
   );
 };
 
-export default TabCarousel;
+export default TabHorizontal;

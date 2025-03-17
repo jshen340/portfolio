@@ -11,16 +11,20 @@
     cursor: pointer;
     padding: 10px;
     margin-right: 10px;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-bottom: none;
-    background-color: #f1f1f1;
+    background-color: #9f607b;
+    border-radius: 20px;
+    text-align: center;
 }
- 
-.tab.active {
-    background-color: #ddd;
+.tab.vertical {
+    background-color: #925871;
+}
+.tab.active.vertical {
+    background-color: #D282A4;
 }
  
 .tab-content {
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     padding: 10px;
 }

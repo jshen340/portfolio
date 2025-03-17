@@ -1,9 +1,17 @@
 .photo {
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 250px;
   margin: 0 auto;
   display: block;
   margin-bottom: 20px;
+}
+
+.slide-container {
+  width: 100%;
+  max-width: 100% !important;
+  height: 60vh;
+  overflow: hidden;
+  padding: 0;
 }
 
 h4 {
@@ -15,14 +23,12 @@ p {
 }
 
 .react-multi-carousel-list{
-  position: unset !important;
-  width: 80%;
-  padding: 30px 0 ;
-  margin: 0 auto;
-
-
-
+  /* position: unset !important; */
+  width: 100%;
+  /* padding: 30px 0 ; */
+  /* margin: 0 auto; */
 }
+
 
 .item {
   display: block;
@@ -32,12 +38,12 @@ p {
 
 
 .react-multiple-carousel__arrow--left {
-  left: calc(10% + 1px);
+  left: calc(2% + 1px);
   background-color: pink;
 }
 
 .react-multiple-carousel__arrow--right {
-  right: calc(10% + 1px);
+  right: calc(2% + 1px);
   background-color: pink;
 }
 
@@ -45,5 +51,8 @@ p {
   background: rgba(174, 107, 107, 0.8);
 }
 
+.react-multiple-carousel__arrow::after {
+  color: pink;
+}
 
 /* https://github.com/YIZHUANG/react-multi-carousel/blob/061e721b3ed9e3bd83b131c92fc54bb0c9a0a534/src/assets/styles.css#L4 */

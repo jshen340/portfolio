@@ -8,8 +8,8 @@ interface Tabs {
 interface Props {
   tabs: Tabs[];
 }
-const TabCarousel = ({ tabs }: Props) => {
-  const [activeTab, setActiveTab] = useState(1);
+const TabVertical = ({ tabs }: Props) => {
+  const [activeTab, setActiveTab] = useState(0);
   const handleTagClick = (index: number) => {
     setActiveTab(index);
   };
@@ -22,6 +22,7 @@ const TabCarousel = ({ tabs }: Props) => {
             label={tab.label}
             onClick={() => handleTagClick(index)}
             isActive={index === activeTab}
+            way={"vertical"}
           />
         ))}
       </div>
@@ -34,4 +35,4 @@ const TabCarousel = ({ tabs }: Props) => {
   );
 };
 
-export default TabCarousel;
+export default TabVertical;

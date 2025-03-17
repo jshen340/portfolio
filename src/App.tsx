@@ -6,16 +6,18 @@ import CarouselSlide from "./components/CarouselSlide";
 import TabGroup from "./components/TabGroup";
 import Title from "./components/Title";
 import Contact from "./components/Contact";
+import { HomePage } from "./components/HomePage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Hero />
-      <Title title="Experience" />
-      <TabGroup />
-      <Title title="Projects" />
-      <CarouselSlide />
-      <Title title="Contact" />
-      <Contact />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/hero" element={<Hero />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/hello" element={<CarouselSlide />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

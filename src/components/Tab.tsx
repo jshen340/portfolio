@@ -3,9 +3,10 @@ interface Props {
   label: string;
   onClick: () => void;
   isActive: boolean;
+  way: string;
 }
-const Tab = ({ label, onClick, isActive }: Props) => (
-  <div className={`tab ${isActive ? "active" : ""}`} onClick={onClick}>
+const Tab = ({ label, onClick, isActive, way }: Props) => (
+  <div className={`tab ${way} ${isActive ? "active" : ""}`} onClick={onClick}>
     {label}
   </div>
 );
