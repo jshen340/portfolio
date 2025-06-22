@@ -1,7 +1,17 @@
 .sections {
 height: 100vh;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section {
+    height: fit-content !important;
+    min-height: auto !important;
+    /* padding: 60px 0; */
+  }
 
+  .wrapper {
+    scroll-snap-type: none;
+  }
+}
 .wrapper {
   height: 100vh;
   overflow-y: scroll;
@@ -24,3 +34,14 @@ height: 100vh;
     scroll-snap-align: center;
     flex: none;
   } */
+
+  .footer {
+    width: 100vw;
+    background-color: #89879d;
+    height: 100px;
+    text-align: center;
+    vertical-align: bottom;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }

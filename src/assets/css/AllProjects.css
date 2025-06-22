@@ -1,0 +1,18 @@
+.project-container {
+    padding: 60px;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+.projects {
+    margin-left: 100px;
+    font-size: 60px;
+    font-family: 'Manjari';
+}
+
+
+
+.project-background {
+    background-color: #DAC0C9;
+}

@@ -11,25 +11,27 @@ import AWS from "../assets/icons/aws.svg";
 import AndroidStudio from "../assets/icons/android.svg";
 import Vue from "../assets/icons/vue.svg";
 import Angular from "../assets/icons/angular.svg";
+import Figma from "../assets/icons/figma.svg";
 import "../assets/css/Skills.css";
 const Skills = () => {
   return (
     <>
       <div className="container-skills">
-        <h2 className="header">Skills</h2>
+        <h2 className="header-skills">Skills</h2>
         <div className="images">
-          <img src={Python} alt="" />
-          <img src={React_Icon} alt="" />
-          <img src={Tableau} alt="" />
-          <img src={Javascript} alt="" />
-          <img src={HTML} alt="" />
-          <img src={CSS} alt="" />
-          <img src={SQL} alt="" />
-          <img src={Git} alt="" />
-          <img src={AWS} alt="" />
-          <img src={AndroidStudio} alt="" />
-          <img src={Vue} alt="" />
-          <img src={Angular} alt="" />
+          <img src={Python} alt="Python" />
+          <img src={React_Icon} alt="React" />
+          <img src={Tableau} alt="Tableau" />
+          <img src={Javascript} alt="Javascript" />
+          <img src={HTML} alt="HTML" />
+          <img src={CSS} alt="CSS" />
+          <img src={SQL} alt="SQL" />
+          <img src={Git} alt="Git" />
+          <img src={AWS} alt="AWS" />
+          <img src={AndroidStudio} alt="Android Studio" />
+          <img src={Vue} alt="Vue" />
+          <img src={Angular} alt="Angular" />
+          <img src={Figma} alt="Figma" />
         </div>
       </div>
     </>

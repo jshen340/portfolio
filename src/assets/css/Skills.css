@@ -1,3 +1,10 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container-skills {
+    height: auto !important;
+    min-height: auto !important;
+  }
+}
+
 .container-skills {
     height: 100vh;
     background-color: #F4EBDC;
@@ -7,22 +14,22 @@
     /*max-width: 100vw !important;*/
 }
 
-img {
-    width: 85px;
+.images img {
+    width: 13vw;
     height: 85px;
     margin: 20px;
 }
 
-.header {
+.header-skills {
     color: #826F8B;
 }
 
 .images {
     display: flex;
     align-items: center;
-    margin-left: 70px;
+    margin-left: 10vw;
     justify-content: center;
-    margin-right: 70px;
+    margin-right: 10vw;
     flex-wrap: wrap;
 }
 
@@ -36,4 +43,9 @@ img {
 
 .images img:nth-child(9), .images img:nth-child(10), .images img:nth-child(11), .images img:nth-child(12) {
     flex-basis: 20%;
+}
+
+.images img:nth-child(12) {
+        margin-bottom: 100px;
+
 }

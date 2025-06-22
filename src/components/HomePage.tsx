@@ -6,24 +6,15 @@ import CarouselSlide from "./CarouselSlide";
 import Contact from "./Contact";
 import Skills from "./Skills";
 import "../assets/css/HomePage.css";
-import { Project } from "./Project";
+import { Projects } from "./Projects";
 export const HomePage = () => {
   return (
-    // <>
-    //   <section className="y mandatory-scroll-snapping" dir="ltr">
-    //     <Hero/>
-    //     <div>2</div>
-    //     <div>3</div>
-    //     <div>4</div>
-    //     <div>5</div>
-    //   </section>
-    // </>
     <div className="wrapper">
       <section className="section">
         <Hero />
       </section>
       <section className="section">
-        <Project />
+        <Projects />
       </section>
       <section className="section">
         <TabGroup />
@@ -34,6 +25,7 @@ export const HomePage = () => {
       <section className="section">
         <Contact />
       </section>
+      <div className="footer">© 2025 Jocelyn Shen</div>
     </div>
   );
 };

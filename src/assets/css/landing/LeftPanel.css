@@ -6,7 +6,7 @@ h1 {
 
 .container {
     font-family: 'Josefin Sans';
-    margin-top: 36px;
+    /* margin-top: 36px; */
     margin-left: 20px;
     height: 65vh;
     max-width: 450px;

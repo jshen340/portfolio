@@ -3,6 +3,8 @@ import Tab from "./Tab";
 import "../assets/css/TabHorizontal.css";
 import TabVertical from "./TabVertical";
 import Summer24Delta from "../assets/text/summer24-delta";
+import Spring23Delta from "../assets/text/spring23-delta";
+import Fall23Delta from "../assets/text/fall23-delta";
 interface Tabs {
   label: string;
   description: string;
@@ -14,10 +16,9 @@ const tabData = [
   { label: "Summer 2024", description: <Summer24Delta /> },
   {
     label: "Fall 2023",
-    description:
-      "TODPS RAHHH and here are just some filler words,  i need to see how it looks like on the screen with all of the words together",
+    description: <Fall23Delta />,
   },
-  { label: "Spring 2023", description: "cute little dashboards" },
+  { label: "Spring 2023", description: <Spring23Delta /> },
 ];
 
 const TabHorizontal = ({ tabs }: Props) => {

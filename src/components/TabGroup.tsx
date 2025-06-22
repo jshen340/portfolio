@@ -1,10 +1,10 @@
 import TabHorizontal from "./TabHorizontal";
 import "../assets/css/TabHorizontal.css";
+import UPS from "../assets/text/ups";
 const tabData = [
-  // { label: "x", description: "<Summer24Delta /> " },
-  { label: "Delta Air Lines", description: "this is tab number 1" },
-  { label: "United Postal Service", description: "this is tab number 2" },
-  { label: "??", description: "this is tab number 3" },
+  { label: "Delta Air Lines", description: "this is tab number 2" },
+  { label: "United Postal Service", description: <UPS /> },
+  { label: "Walmart", description: "In progress" },
 ];
 const TabGroup = () => {
   return (

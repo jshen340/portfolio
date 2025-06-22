@@ -1,0 +1,60 @@
+.banner-container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.cont {
+position: relative;
+max-width: 900px;
+width: 100%;
+}
+
+.image-container {
+    max-width: 900px;
+    height: 200px;
+}
+
+.shadow-box {
+    position: absolute;
+    top: 20px;
+    left: 20px; 
+    max-width: 900px;
+    width: 100%;
+    height: 200px;
+    background-color: #845368; 
+    border-radius: 10px;
+    z-index: 0; /* Ensures it stays behind */
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+
+}
+
+.overlay {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    background-color: #9F607B; /* Matching pink shade */
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: end;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.desc {
+    margin: 0;
+}
