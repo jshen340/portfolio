@@ -3,7 +3,7 @@ import Tab from "./Tab";
 import "../assets/css/TabVertical.css";
 interface Tabs {
   label: string;
-  description: string;
+  description: React.ReactNode;
 }
 interface Props {
   tabs: Tabs[];

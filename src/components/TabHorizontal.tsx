@@ -7,7 +7,7 @@ import Spring23Delta from "../assets/text/spring23-delta";
 import Fall23Delta from "../assets/text/fall23-delta";
 interface Tabs {
   label: string;
-  description: string;
+  description: React.ReactNode;
 }
 interface Props {
   tabs: Tabs[];
