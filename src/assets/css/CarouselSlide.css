@@ -1,62 +1,130 @@
 .photo {
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .slide-container {
-  width: 100%;
-  max-width: 100% !important;
-  height: 400px;
-  overflow: hidden;
-  padding: 0;
+    width: 100%;
+    max-width: 100% !important;
+    height: auto;
+    min-height: 350px;
+    overflow: hidden;
+    padding: 20px 0;
 }
 
 h4 {
-  text-align: center;
-  color: white;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
 }
 
 p {
-  text-align: center;
-  color: white;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0 10px;
 }
 
-.react-multi-carousel-list{
-  /* position: unset !important; */
-  width: 100%;
-  /* padding: 30px 0 ; */
-  /* margin: 0 auto; */
+.react-multi-carousel-list {
+    width: 100%;
 }
-
 
 .item {
-  display: block;
-  text-align: center;
-  padding: 40px;
+    display: block;
+    text-align: center;
+    padding: 20px 10px;
 }
 
+.project {
+    padding: 15px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
 
 .react-multiple-carousel__arrow--left {
-  left: calc(2% + 1px);
-  background-color: pink;
+    left: calc(2% + 1px);
+    background-color: rgba(255, 192, 203, 0.8);
+    border-radius: 50%;
 }
 
 .react-multiple-carousel__arrow--right {
-  right: calc(2% + 1px);
-  background-color: pink;
+    right: calc(2% + 1px);
+    background-color: rgba(255, 192, 203, 0.8);
+    border-radius: 50%;
 }
 
 .react-multiple-carousel__arrow:hover {
-  background: rgba(174, 107, 107, 0.8);
+    background: rgba(174, 107, 107, 0.9);
 }
 
 .react-multiple-carousel__arrow::after {
-  color: pink;
+    color: white;
+    font-size: 16px;
 }
 
+/* Tablet styles */
+@media screen and (min-width: 768px) {
+    .photo {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 20px;
+    }
 
+    .slide-container {
+        min-height: 400px;
+        padding: 30px 0;
+    }
 
-/* https://github.com/YIZHUANG/react-multi-carousel/blob/061e721b3ed9e3bd83b131c92fc54bb0c9a0a534/src/assets/styles.css#L4 */
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .item {
+        padding: 30px 15px;
+    }
+
+    .project {
+        padding: 20px;
+    }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+    .photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .slide-container {
+        min-height: 450px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    .item {
+        padding: 40px 20px;
+    }
+}

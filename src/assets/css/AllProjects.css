@@ -1,18 +1,74 @@
 .project-container {
-    padding: 60px;
+    padding: 40px 20px;
     margin: auto;
-    width: fit-content;
+    width: 100%;
+    max-width: 1200px;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .projects {
-    margin-left: 100px;
-    font-size: 60px;
+    margin-left: 0;
+    font-size: 36px;
     font-family: 'Manjari';
+    text-align: center;
+    margin-bottom: 30px;
 }
-
-
 
 .project-background {
     background-color: #DAC0C9;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.project-background .home {
+    font-family: 'Megrim';
+    font-size: 28px;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Tablet styles */
+@media screen and (min-width: 768px) {
+    .project-container {
+        padding: 60px 40px;
+        gap: 40px;
+    }
+
+    .projects {
+        margin-left: 60px;
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .project-background {
+        padding: 40px;
+    }
+
+    .project-background .home {
+        font-size: 32px;
+        padding: 30px;
+    }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+    .project-container {
+        padding: 60px;
+    }
+
+    .projects {
+        margin-left: 100px;
+        font-size: 60px;
+    }
+
+    .project-background .home {
+        font-size: 35px;
+    }
 }

@@ -1,31 +1,82 @@
-
 .tabs-container-v {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
- 
+
 .tabs-v {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
 }
- 
+
 .tab {
     cursor: pointer;
-    padding: 10px;
-    margin-right: 10px;
-    /* border: 1px solid #ddd; */
-    border-bottom: none;
+    padding: 10px 15px;
     background-color: #9f607b;
-    border-radius: 20px;
+    border-radius: 15px;
     text-align: center;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    flex: 1;
+    min-width: 100px;
 }
+
 .tab.vertical {
     background-color: #925871;
 }
+
 .tab.active.vertical {
     background-color: #D282A4;
 }
- 
-.tab-content {
-    /* border: 1px solid #ddd; */
-    padding-right: 10px;
 
+.tab:hover {
+    background-color: #b8537a;
+}
+
+.tab-content-v {
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Tablet styles */
+@media screen and (min-width: 768px) {
+    .tabs-container-v {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .tabs-v {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        min-width: 150px;
+        margin-bottom: 0;
+    }
+
+    .tab {
+        font-size: 16px;
+        padding: 12px 20px;
+        margin-bottom: 10px;
+        min-width: auto;
+        flex: none;
+    }
+
+    .tab-content-v {
+        flex: 1;
+        padding: 0 20px;
+    }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+    .tabs-v {
+        min-width: 180px;
+    }
+
+    .tab {
+        font-size: 18px;
+        padding: 15px 25px;
+    }
 }

@@ -1,51 +1,94 @@
-@media (min-width: 768px) and (max-width: 1024px) {
-  .container-skills {
-    height: auto !important;
-    min-height: auto !important;
-  }
-}
-
 .container-skills {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #F4EBDC;
     display: flex;
     width: 100vw;
     flex-direction: column;
-    /*max-width: 100vw !important;*/
+    padding: 40px 20px;
+    box-sizing: border-box;
+    align-items: center;
 }
 
 .images img {
-    width: 13vw;
-    height: 85px;
-    margin: 20px;
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.1);
 }
 
 .header-skills {
     color: #826F8B;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .images {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
     align-items: center;
-    margin-left: 10vw;
-    justify-content: center;
-    margin-right: 10vw;
-    flex-wrap: wrap;
+    max-width: 400px;
+    width: 100%;
 }
 
-.images img:nth-child(1), .images img:nth-child(2), .images img:nth-child(3), .images img:nth-child(4), .images img:nth-child(5) {
-    flex-basis: 15%;
+/* Tablet styles */
+@media screen and (min-width: 768px) {
+    .container-skills {
+        padding: 60px 40px;
+    }
+
+    .images {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 600px;
+        gap: 25px;
+    }
+
+    .images img {
+        width: 70px;
+        height: 70px;
+        margin: 10px;
+    }
+
+    .header-skills {
+        font-size: 42px;
+    }
 }
 
-.images img:nth-child(6), .images img:nth-child(7), .images img:nth-child(8) {
-    flex-basis: 20%;
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+    .images {
+        grid-template-columns: repeat(5, 1fr);
+        max-width: 800px;
+        gap: 30px;
+    }
+
+    .images img {
+        width: 80px;
+        height: 80px;
+        margin: 15px;
+    }
+
+    .header-skills {
+        font-size: 45px;
+    }
 }
 
-.images img:nth-child(9), .images img:nth-child(10), .images img:nth-child(11), .images img:nth-child(12) {
-    flex-basis: 20%;
-}
+/* Large desktop styles */
+@media screen and (min-width: 1440px) {
+    .images {
+        max-width: 1000px;
+    }
 
-.images img:nth-child(12) {
-        margin-bottom: 100px;
-
+    .images img {
+        width: 85px;
+        height: 85px;
+        margin: 20px;
+    }
 }

@@ -1,44 +1,63 @@
 .tabs-container {
-    display:flex;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: #9f607b;
     border-radius: 20px;
     height: fit-content;
-    max-height: auto;
-
+    max-height: none;
+    min-height: 400px;
 }
+
 .tabs {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 5px;
 }
+
 .tab.horizontal {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin: 5px;
     color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    text-align: center;
+    flex: 1;
+    min-width: 120px;
 }
+
 .tab.horizontal.active {
     background-color: #D282A4;
 }
 
+.tab.horizontal:hover {
+    background-color: #b8537a;
+}
+
 .tab-content {
-    padding: 10px;
+    padding: 20px;
     width: 100%;
     color: white;
+    box-sizing: border-box;
+    flex-grow: 1;
 }
 
 .backdrop {
-    max-width: 900px;
+    max-width: 1000px;
     width: 100%;
     margin: auto;
     border-radius: 20px;
-    min-height: 500px;
+    min-height: 400px;
     height: 100%;
-    /* padding-top: 50px; */
-    /* align-self: flex-start; */
 }
+
 .background {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #e9c0c9;
     display: flex;
     justify-content: flex-start;
@@ -46,18 +65,60 @@
     overflow-x: hidden;
     box-sizing: border-box;
     flex-direction: column;
+    padding: 40px 20px;
 }
 
 .h2 {
-    margin-top: 60px;
-    margin-left: 80px;
-    font-size: 45px;
+    margin-top: 20px;
+    margin-left: 0;
+    font-size: 36px;
     color: #f4ebdc;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-@media (min-width: 768px) and (max-width: 1366px) {
-  .background {
-    height: auto !important;
-    min-height: auto !important;
-  }
+/* Tablet styles */
+@media screen and (min-width: 768px) {
+    .background {
+        padding: 60px 40px;
+    }
+
+    .h2 {
+        margin-left: 60px;
+        text-align: left;
+        font-size: 42px;
+    }
+
+    .tab.horizontal {
+        font-size: 16px;
+        padding: 12px 20px;
+        min-width: 140px;
+    }
+
+    .tabs {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .tab-content {
+        padding: 25px;
+    }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+    .h2 {
+        margin-left: 80px;
+        font-size: 45px;
+    }
+
+    .tab.horizontal {
+        font-size: 18px;
+        padding: 15px 25px;
+        min-width: 160px;
+    }
+
+    .backdrop {
+        max-width: 900px;
+    }
 }
