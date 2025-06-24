@@ -7,33 +7,32 @@
     justify-content: center;
     overflow-x: hidden;
     flex-direction: column;
-    height: 100vh;
-}
-img {
-  padding: 0;
-  margin: 0;
-}
-.container-project a {
-  align-self: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .container-project {
-    height: auto !important;
-    min-height: auto !important;
-  }
+img {
+    padding: 0;
+    margin: 0;
 }
+
+.container-project a {
+    align-self: center;
+}
+
 h2 {
-    margin-top: 60px;
-    margin-left: 80px;
+    margin-top: 20px;
+    margin-left: 0;
     margin-bottom: 30px;
-    align-self: flex-start;
-    font-size: 45px;
+    align-self: center;
+    font-size: 36px;
     color: #f4ebdc;
+    text-align: center;
 }
 
 .all-projects {
-    width: 150px;
+    width: 200px;
     color: white;
     align-self: center;
     background-color: #C6D8D3;
@@ -43,4 +42,47 @@ h2 {
     font-size: 18px;
     cursor: pointer;
     font-family: 'Manjari';
-  }
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.all-projects:hover {
+    background-color: #b5c7c2;
+    transform: translateY(-2px);
+}
+
+/* Tablet styles */
+@media screen and (min-width: 768px) {
+    .container-project {
+        padding: 60px 40px;
+    }
+
+    h2 {
+        margin-left: 60px;
+        align-self: flex-start;
+        font-size: 42px;
+    }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+    .container-project {
+        padding: 80px 60px;
+    }
+
+    h2 {
+        margin-left: 80px;
+        font-size: 45px;
+    }
+
+    .all-projects {
+        width: 180px;
+    }
+}
+
+/* Large desktop styles */
+@media screen and (min-width: 1440px) {
+    .container-project {
+        padding: 100px 80px;
+    }
+}

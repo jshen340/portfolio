@@ -1,31 +1,33 @@
 .banner-container {
     position: relative;
-    max-width: 900px;
+    max-width: 100%;
     width: 100%;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
+
 .cont {
-position: relative;
-max-width: 900px;
-width: 100%;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
 }
 
 .image-container {
-    max-width: 900px;
-    height: 200px;
+    width: 100%;
+    height: 180px;
+    position: relative;
 }
 
 .shadow-box {
     position: absolute;
-    top: 20px;
-    left: 20px; 
-    max-width: 900px;
+    top: 15px;
+    left: 15px;
     width: 100%;
-    height: 200px;
-    background-color: #845368; 
+    height: 180px;
+    background-color: #845368;
     border-radius: 10px;
-    z-index: 0; /* Ensures it stays behind */
+    z-index: 0;
 }
 
 .image {
@@ -36,25 +38,93 @@ width: 100%;
     padding: 0;
     margin: 0;
     border-radius: 10px;
-
+    position: relative;
+    z-index: 1;
 }
 
 .overlay {
     position: absolute;
-    bottom: 50px;
-    right: 0;
-    background-color: #9F607B; /* Matching pink shade */
-    padding: 10px;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgba(159, 96, 123, 0.9);
+    padding: 10px 15px;
     color: white;
-    font-size: 1rem;
+    font-size: 14px;
     border-radius: 5px;
-    text-align: end;
-
+    text-align: right;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    max-width: 60%;
+    z-index: 2;
+}
+
+.overlay h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
 }
 
 .desc {
     margin: 0;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+/* Tablet styles */
+@media screen and (min-width: 768px) {
+    .banner-container {
+        max-width: 700px;
+        height: 220px;
+    }
+
+    .image-container {
+        height: 200px;
+    }
+
+    .shadow-box {
+        top: 20px;
+        left: 20px;
+        height: 200px;
+    }
+
+    .overlay {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 18px;
+        font-size: 15px;
+    }
+
+    .overlay h3 {
+        font-size: 18px;
+    }
+
+    .desc {
+        font-size: 13px;
+    }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+    .banner-container {
+        max-width: 900px;
+        height: 250px;
+    }
+
+    .image-container {
+        height: 200px;
+    }
+
+    .overlay {
+        bottom: 50px;
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+
+    .overlay h3 {
+        font-size: 20px;
+    }
+
+    .desc {
+        font-size: 14px;
+    }
 }
