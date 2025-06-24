@@ -26,6 +26,10 @@
     min-height: 100px;
 }
 
+.message {
+  outline: solid;  
+}
+
 .personal {
     display: flex;
     flex-direction: column;
@@ -136,8 +140,7 @@ form {
 
     .message textarea {
         height: 150px;
-        width: 100%;
-        min-width: 650px;
+        width: 100%;      
     }
 
     .field {
