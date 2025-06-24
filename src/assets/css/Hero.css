@@ -47,7 +47,6 @@ a {
     color: #61524A;
     text-align: center;
     position: relative;
-  outline: solid;
 }
 
 .label {
@@ -143,6 +142,7 @@ p {
     .topper {
         text-align: left;
         font-size: 22px;
+        margin-top: 10px;
     }
 
     .text {
