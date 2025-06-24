@@ -7,25 +7,23 @@ a {
 .container {
     display: flex;
     width: 100vw;
+    height: 100vh;
     max-width: 100vw !important;
-    align-items: center;
-    background-color: #F4EBDC;
+    background-color: #d9c0c9;
     overflow: hidden;
-    min-height: 100vh;
     margin: 0;
-    flex-direction: column;
-    padding: 20px;
+    padding: 0;
     box-sizing: border-box;
 }
 
 /* Mobile First Approach */
 .intro-text {
-    flex-basis: 100%;
     position: relative;
     font-size: 18px;
     width: 100%;
-    margin-top: 2vh;
+    padding: 20px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .topper {
@@ -65,24 +63,23 @@ a {
 p {
     margin-top: 20px;
     margin-left: 0;
-    padding: 0 10px;
+    padding: 0;
 }
 
 .panel {
+    background-color: #F4EBDC;
     width: 100%;
+    height: 100vh;
     margin: 0;
-    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .img-panel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 20px;
+    display: none;
 }
 
 .portrait {
@@ -94,11 +91,14 @@ p {
 }
 
 .home {
-    padding: 20px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 30px;
+    left: 30px;
     z-index: 10;
+    font-family: 'Megrim';
+    font-size: 28px;
+    color: black;
+    margin: 0;
 }
 
 .menu {
@@ -128,16 +128,16 @@ p {
 @media screen and (min-width: 768px) {
     .container {
         flex-direction: row;
-        background-color: #d9c0c9;
-        padding: 40px;
     }
 
     .intro-text {
-        flex-basis: 60%;
         font-size: 20px;
-        margin-left: 5vw;
-        margin-top: 5vh;
         text-align: left;
+        padding: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .topper {
@@ -148,44 +148,55 @@ p {
     .text {
         text-align: left;
         margin-top: 40px;
+        max-width: 90%;
     }
 
     .title {
         font-size: 70px;
         text-align: left;
-        padding-left: 2vw;
+        margin-left: 0;
+        padding-left: 0;
     }
 
     .label {
         text-align: left;
         letter-spacing: 0.4em;
         font-size: 13px;
-        margin-left: 80px;
-        margin-top: -1vh;
+        margin-left: 60px;
+        margin-top: -10px;
     }
 
     .panel {
-        background-color: #F4EBDC;
         width: 60%;
         height: 100vh;
         align-items: flex-start;
+        padding: 0;
     }
 
     .img-panel {
+        display: flex;
         width: 40%;
+        height: 100vh;
         align-items: center;
-        margin-top: 0;
+        justify-content: center;
+        background-color: #d9c0c9;
     }
 
     .portrait {
         height: 400px;
         width: 320px;
-        margin: 30px;
+        margin: 0;
     }
 
     p {
-        margin-left: 20px;
+        margin-left: 0;
         padding: 0;
+    }
+
+    .home {
+        top: 30px;
+        left: 40px;
+        font-size: 32px;
     }
 }
 
@@ -193,31 +204,38 @@ p {
 @media screen and (min-width: 1024px) {
     .intro-text {
         font-size: 20px;
-        margin-left: 8vw;
-        margin-top: 7vh;
+        padding: 60px;
     }
 
     .title {
         font-size: 80px;
-        padding-left: 3vw;
     }
 
     .label {
         letter-spacing: 0.5em;
         font-size: 14px;
-        margin-left: 100px;
+        margin-left: 80px;
     }
 
     .portrait {
         height: 450px;
         width: 370px;
     }
+
+    .home {
+        font-size: 35px;
+        left: 60px;
+    }
+
+    .text {
+        max-width: 85%;
+    }
 }
 
 /* Large desktop styles */
 @media screen and (min-width: 1440px) {
     .intro-text {
-        margin-left: 10vw;
+        padding: 80px;
     }
 
     .title {
@@ -227,5 +245,9 @@ p {
     .portrait {
         height: 500px;
         width: 400px;
+    }
+
+    .text {
+        max-width: 80%;
     }
 }

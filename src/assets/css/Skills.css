@@ -7,6 +7,7 @@
     padding: 40px 20px;
     box-sizing: border-box;
     align-items: center;
+    justify-content: center;
 }
 
 .images img {
@@ -63,6 +64,10 @@
 
 /* Desktop styles */
 @media screen and (min-width: 1024px) {
+    .container-skills {
+        padding: 80px 60px;
+    }
+
     .images {
         grid-template-columns: repeat(5, 1fr);
         max-width: 800px;
@@ -82,6 +87,10 @@
 
 /* Large desktop styles */
 @media screen and (min-width: 1440px) {
+    .container-skills {
+        padding: 100px 80px;
+    }
+
     .images {
         max-width: 1000px;
     }

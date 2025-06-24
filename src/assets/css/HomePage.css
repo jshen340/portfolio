@@ -4,9 +4,9 @@
 
 .wrapper {
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
-    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 .section {
@@ -16,7 +16,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    scroll-snap-align: start;
     box-sizing: border-box;
 }
 
@@ -33,33 +32,10 @@
 }
 
 /* Tablet styles */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .wrapper {
-        scroll-snap-type: none;
-    }
-
-    .section {
-        min-height: auto;
-        height: auto;
-        padding: 40px 0;
-    }
-
+@media screen and (min-width: 768px) {
     .footer {
         height: 100px;
         font-size: 16px;
-    }
-}
-
-/* Mobile landscape and small tablets */
-@media screen and (max-height: 600px) and (min-width: 768px) {
-    .wrapper {
-        scroll-snap-type: none;
-    }
-
-    .section {
-        min-height: auto;
-        height: auto;
-        padding: 20px 0;
     }
 }
 

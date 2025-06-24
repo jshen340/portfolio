@@ -7,6 +7,7 @@
     overflow-x: hidden;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 40px 20px;
     box-sizing: border-box;
 }
@@ -135,6 +136,7 @@ form {
 
     .message textarea {
         height: 150px;
+        width: 100%;
     }
 
     .field {
@@ -158,6 +160,10 @@ form {
 
 /* Desktop styles */
 @media screen and (min-width: 1024px) {
+    .container-contact {
+        padding: 80px 60px;
+    }
+
     .container-contact h2 {
         font-size: 45px;
     }
@@ -165,5 +171,20 @@ form {
     .icons img {
         width: 45px;
         height: 45px;
+    }
+
+    form {
+        max-width: 900px;
+    }
+}
+
+/* Large desktop styles */
+@media screen and (min-width: 1440px) {
+    .container-contact {
+        padding: 100px 80px;
+    }
+
+    form {
+        max-width: 1000px;
     }
 }

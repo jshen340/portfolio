@@ -60,7 +60,8 @@
     min-height: 100vh;
     background-color: #e9c0c9;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     overflow-x: hidden;
     box-sizing: border-box;
@@ -107,6 +108,10 @@
 
 /* Desktop styles */
 @media screen and (min-width: 1024px) {
+    .background {
+        padding: 80px 60px;
+    }
+
     .h2 {
         margin-left: 80px;
         font-size: 45px;
@@ -120,5 +125,12 @@
 
     .backdrop {
         max-width: 900px;
+    }
+}
+
+/* Large desktop styles */
+@media screen and (min-width: 1440px) {
+    .background {
+        padding: 100px 80px;
     }
 }
