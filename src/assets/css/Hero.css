@@ -47,6 +47,7 @@ a {
     color: #61524A;
     text-align: center;
     position: relative;
+  outline: solid;
 }
 
 .label {
